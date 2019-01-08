@@ -1,0 +1,231 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/blue_deep">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/home_title_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x50" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x260"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/home_dbsy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/home_img_dbsy"
+                        android:layout_width="@dimen/x120"
+                        android:layout_height="@dimen/x120"
+                        android:background="@drawable/index_menu_2" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:text="@string/home_todo_things" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home_yj"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:id="@+id/home_img_yjgj"
+                        android:layout_width="@dimen/x120"
+                        android:layout_height="@dimen/x120"
+                        android:background="@drawable/index_menu_1" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:text="@string/home_early_warning" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/home_gj"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:id="@+id/home_img_pllb"
+                        android:layout_width="@dimen/x120"
+                        android:layout_height="@dimen/x120"
+                        android:background="@drawable/index_menu_11" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:text="@string/home_alarm" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home_tzgg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:id="@+id/home_img_tzgg"
+                        android:layout_width="@dimen/x120"
+                        android:layout_height="@dimen/x120"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/index_menu_7" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:text="@string/home_notification" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/fragment_home_date_before"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:layout_marginRight="@dimen/x80"
+            android:background="@drawable/reduce"
+            />
+
+        <TextView
+            android:id="@+id/fragment_home_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="@dimen/x40" />
+
+        <ImageButton
+            android:id="@+id/fragment_home_date_next"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:layout_marginLeft="@dimen/x80"
+            android:background="@drawable/add" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.example.administrator.dimine_projectd.ViewPagerIndicator
+            android:id="@+id/id_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x120"
+            android:background="@color/blue_deep"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+        </com.example.administrator.dimine_projectd.ViewPagerIndicator>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_vp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_have_nomessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/gray_line"></include>
+
+        <ImageView
+            android:id="@+id/img_nomessage"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/x150"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x200"
+            android:background="@drawable/mnomessage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_nomessage"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x50"
+            android:text="@string/home_nomessage"
+            android:textSize="@dimen/x40" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

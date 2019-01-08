@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_deep"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context=".MyApprovalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/dbsy_top_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_height"
+            android:background="@color/blue_deep">
+
+            <ImageView
+                android:id="@+id/my_dbsy_back"
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/x80"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:background="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/todo_title_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x50" />
+
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/dbsy_have_message"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/dbsy_top_content"-->
+        <!--android:layout_marginTop="@dimen/x50">-->
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/dbsy_tv_name"-->
+        <!--android:layout_width="@dimen/x220"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@color/blue_deep"-->
+        <!--android:gravity="center"-->
+        <!--android:text=""-->
+        <!--android:textColor="@color/white" />-->
+
+        <!--<com.example.administrator.dimine_projectd.NoScrollHorizontalScrollView-->
+        <!--android:id="@+id/dbsy_sv_title"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_toRightOf="@id/dbsy_tv_name"-->
+        <!--android:scrollbars="none">-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/dbsy_title_ll"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:orientation="horizontal">-->
+
+
+        <!--</LinearLayout>-->
+        <!--</com.example.administrator.dimine_projectd.NoScrollHorizontalScrollView>-->
+
+        <!--<ListView-->
+        <!--android:id="@+id/dbsy_lv_goodname"-->
+        <!--android:layout_width="@dimen/x220"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/dbsy_tv_name"-->
+        <!--android:scrollbars="none"></ListView>-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_toRightOf="@id/dbsy_tv_name"-->
+        <!--android:background="#cccccc" />-->
+
+        <!--<com.example.administrator.dimine_projectd.LinkedHorizontalScrollView-->
+        <!--android:id="@+id/dbsy_good_detail"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/dbsy_tv_name"-->
+        <!--android:layout_toRightOf="@id/dbsy_lv_goodname"-->
+        <!--android:scrollbars="none">-->
+
+        <!--<ListView-->
+        <!--android:id="@+id/dbsy_good_info"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"></ListView>-->
+        <!--</com.example.administrator.dimine_projectd.LinkedHorizontalScrollView>-->
+
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/dbsy_have_nomessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/dbsy_img_nomessage"
+                android:layout_width="@dimen/x150"
+                android:layout_height="@dimen/x150"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x300"
+                android:background="@drawable/mnomessage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dbsy_img_nomessage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x50"
+                android:text="@string/home_nomessage"
+                android:textSize="@dimen/x40" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/dbsy_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </ListView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

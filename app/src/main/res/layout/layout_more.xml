@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/x70"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_like"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/x40"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_like" />
+
+        <TextView
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/img_like"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="赞"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/x70"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_comment"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/x40"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_comment" />
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/img_comment"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="评论"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>

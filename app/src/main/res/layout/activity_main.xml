@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_deep"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.dimine_projectd.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <com.example.administrator.dimine_projectd.ViewPagerCompat
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:duplicateParentState="true"
+        >
+
+    </com.example.administrator.dimine_projectd.ViewPagerCompat>
+
+
+    <include layout="@layout/gray_line"></include>
+
+    <LinearLayout
+        android:id="@+id/main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x130"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_home"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tab_home_btn" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_home_btn"
+                    android:textColor="@drawable/text_color_select"
+                    android:textSize="@dimen/x30" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_plan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_plan"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tab_plan_btn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_plan_btn"
+                    android:textColor="@drawable/text_color_select"
+                    android:textSize="@dimen/x30" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_production"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_production"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tab_production_btn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_production_btn"
+                    android:textColor="@drawable/text_color_select"
+                    android:textSize="@dimen/x30" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_report"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_report"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tab_reportform_btn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_report_btn"
+                    android:textColor="@drawable/text_color_select"
+                    android:textSize="@dimen/x30" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_mine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_mine"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tab_mine_btn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_mine_btn"
+                    android:textColor="@drawable/text_color_select"
+                    android:textSize="@dimen/x30" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

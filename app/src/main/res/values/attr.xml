@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FriendCirclePtrListView">
+        <!--abslistview start-->
+        <!--=====================================-->
+        <attr name="listSelector" format="color|reference" />
+        <attr name="transcriptMode">
+            <enum name="disabled" value="0"/>
+            <enum name="normal" value="1" />
+            <enum name="alwaysScroll" value="2" />
+        </attr>
+        <attr name="cacheColorHint" format="color" />
+        <attr name="fastScrollEnabled" format="boolean" />
+        <attr name="fastScrollStyle" format="reference" />
+        <attr name="smoothScrollbar" format="boolean" />
+        <attr name="choiceMode">
+            <!-- Normal list that does not indicate choices. -->
+            <enum name="none" value="0" />
+            <!-- The list allows up to one choice. -->
+            <enum name="singleChoice" value="1" />
+            <!-- The list allows multiple choices. -->
+            <enum name="multipleChoice" value="2" />
+            <!-- The list allows multiple choices in a custom selection mode. -->
+            <enum name="multipleChoiceModal" value="3" />
+        </attr>
+        <!--=====================================-->
+        <!--abslistview end-->
+        <!--=====================================-->
+        <!--listview start-->
+        <attr name="listview_divider" format="reference|color" />
+        <attr name="dividerHeight" format="dimension" />
+        <attr name="overScrollHeader" format="reference|color" />
+        <attr name="overScrollFooter" format="reference|color" />
+    </declare-styleable>
+    <attr name="item_count" format="integer"></attr>
+
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="item_count" />
+    </declare-styleable>
+</resources>

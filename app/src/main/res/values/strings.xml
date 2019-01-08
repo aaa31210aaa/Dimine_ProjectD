@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">DM MES</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--中文版本-->
+    <!--登录页面-->
+    <string name="login_title">登录</string>
+    <string name="app_login_name">DM MES 生产执行系统</string>
+    <string name="login_username">用户名</string>
+    <string name="login_password">密码</string>
+    <string name="login_btn">登录</string>
+    <string name="change_language_btn">切换语言</string>
+    <string name="switch_language">语言选择</string>
+    <string name="english">英语</string>
+    <string name="chinese">中文</string>
+
+
+    <!--主页面-->
+    <string name="main_home_btn">首页</string>
+    <string name="main_plan_btn">计划</string>
+    <string name="main_production_btn">生产</string>
+    <string name="main_report_btn">报表</string>
+    <string name="main_mine_btn">我的</string>
+
+    <!--首页-->
+    <string name="home_title_name">首页</string>
+    <string name="home_todo_things">待办事宜</string>
+    <string name="home_early_warning">预警</string>
+    <string name="home_alarm">告警</string>
+    <string name="home_notification">通知公告</string>
+    <string name="home_nomessage">暂无数据内容</string>
+
+    <!--我的审批-->
+    <string name="todo_title_name">我的审批</string>
+    <string name="signed_for">签收</string>
+    <string name="transact">办理</string>
+    <string name="myapproval">审批：</string>
+    <string name="opinion">审批意见：</string>
+    <string name="approval_submit">提交</string>
+    <string name="title_transact">办理</string>
+    <string name="approval_success">审批成功</string>
+
+    <!--预警-->
+    <string name="early_warning_title">预警</string>
+    <string name="early_warning_name">预警名称：</string>
+    <string name="early_warning_level">预警等级：</string>
+    <string name="early_warning_content">预警内容：</string>
+    <string name="early_warning_time">预警时间：</string>
+
+    <!--告警-->
+    <string name="alarm_title">告警</string>
+    <string name="alarm_name">告警名称：</string>
+    <string name="alarm_level">告警等级：</string>
+    <string name="alarm_content">告警内容：</string>
+    <string name="alarm_time">告警时间：</string>
+
+    <!--通知公告-->
+    <string name="notification_title">通知</string>
+    <string name="notification_details_title">公告详情</string>
+    <string name="notice">公告</string>
+
+    <!--设备管理-->
+    <string name="device_home">设备</string>
+    <string name="device_plan">计划</string>
+    <string name="device_report">设备报表</string>
+
+
+    <!--图表界面-->
+    <string name="graphical_estimate">预计</string>
+    <string name="graphical_actual">实际</string>
+
+    <!--计划-->
+    <string name="plan_title">计划</string>
+    <string name="plan_tab_week">周计划</string>
+    <string name="plan_tab_month">月计划</string>
+
+    <!--评论列表-->
+    <string name="comment_list_title">评论列表</string>
+    <string name="write_comments_title">评论主题</string>
+    <string name="send_comments">发送</string>
+    <string name="say_somethings">说点什么...</string>
+
+    <!--生产-->
+    <string name="production_title">生产</string>
+
+    <!--生产详情-->
+    <string name="production_detail_hisLedger">历史台账</string>
+    <string name="production_detail_teamgroup">班组</string>
+    <string name="production_detail_class">班次</string>
+    <string name="production_detail_job_location">作业地点</string>
+    <string name="production_detail_device">设备</string>
+    <string name="production_detail_tech">工艺</string>
+    <string name="production_detail_remarks">备注</string>
+    <string name="production_detail_save">保存</string>
+
+    <string name="select_first_teamgroup">请先选择班组</string>
+    <string name="select_first_class">请先选择班次</string>
+    <string name="select_first_job_location">请先选择作业地点</string>
+
+    <string name="noselect_teamgroup_yet">未选择班组</string>
+    <string name="noselect_class_yet">未选择班次</string>
+    <string name="noselect_job_location_yet">未选择作业地点</string>
+    <string name="noselect_tech_yet">未选择工艺</string>
+    <string name="no_index_content">有未填写的指标内容</string>
+
+
+    <!--选择班组-->
+    <string name="select_teamgroup_title">选择班组</string>
+    <!--选择班次-->
+    <string name="select_class_title">选择班次</string>
+    <!--选择作业地点-->
+    <string name="select_job_location_title">作业地点</string>
+    <!--选择设备-->
+    <string name="select_device_title">选择设备</string>
+    <!--选择工艺-->
+    <string name="select_tech_title">选择工艺</string>
+
+    <!--历史台账-->
+    <string name="historical_ledger_title">历史台账</string>
+
+
+    <!--报表-->
+    <string name="reportform_title">报表</string>
+    <string name="report_day">日报</string>
+    <string name="report_week">周报</string>
+
+
+    <!--我的-->
+    <string name="mine_title">我的</string>
+    <string name="mine_get_name">姓名：</string>
+    <string name="mine_get_company">公司：</string>
+    <string name="mine_get_position">职位：</string>
+    <string name="mine_notification_title">通知公告</string>
+    <string name="mine_modify_password">修改密码</string>
+    <string name="mine_about">关于</string>
+    <string name="mine_cancellation">注销</string>
+    <string name="modify_password_old">旧  密  码：</string>
+    <string name="modify_password_new">新  密  码：</string>
+    <string name="modify_password_again">确认密码：</string>
+    <string name="modify_password_submit">确定</string>
+    <string name="mine_no_development">暂未开放</string>
+    <string name="mine_cancellation_dialog_title">注销</string>
+    <string name="mine_cancellation_dialog_content">请问是否要注销此账号</string>
+    <string name="mine_cancellation_dialog_btn1">取消</string>
+    <string name="mine_cancellation_dialog_btn2">确定</string>
+
+
+
+    <!--提示内容-->
+    <string name="account_password_null">账号或者密码不能为空</string>
+    <string name="login_loading">请稍后...</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_failed">登录失败</string>
+    <string name="login_timeout">连接超时</string>
+    <string name="exit">再按一次退出程序</string>
+    <string name="back_top">返回顶部</string>
+    <string name="refresh">刷新完成</string>
+    <string name="network_error">请检查网络</string>
+    <string name="no_more_message">无更多数据</string>
+    <string name="loading_more_message">加载更多数据</string>
+    <string name="loading">正在加载...</string>
+    <string name="switching">正在切换...</string>
+    <string name="modify_password_nonull">原密码或者新密码不能为空</string>
+    <string name="modify_password_atypism">两次填写的新密码不一致</string>
+    <string name="nomore">无更多数据加载</string>
+    <string name="yet_open">暂未开放</string>
+    <string name="not_filling_opinion">请填写审批意见</string>
+    <string name="approving">正在审批...</string>
+    <string name="query_failed">查询失败，请检查网络</string>
+    <string name="click_agin">再按一次退出应用</string>
+
+
+</resources>

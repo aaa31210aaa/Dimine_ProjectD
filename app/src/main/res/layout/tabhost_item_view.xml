@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y100"
+            android:focusable="false"
+            android:padding="3dp"
+            android:src="@drawable/tab_home_btn"></ImageView>
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageview"
+            android:layout_centerHorizontal="true"
+            android:text="首页"
+            android:textColor="@drawable/text_color_select"
+            android:textSize="@dimen/x35"></TextView>
+
+        <TextView
+            android:id="@+id/main_red_point"
+            style="@style/tab_msgnum_style"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/x120"
+            android:textSize="@dimen/x30"/>
+
+    </RelativeLayout>
+</LinearLayout>

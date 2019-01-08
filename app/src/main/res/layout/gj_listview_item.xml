@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x20"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x10"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:textColor="@color/blue_deep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:gravity="center"
+                    android:text="@string/alarm_name"
+                    android:textSize="@dimen/x35" />
+
+                <TextView
+                    android:id="@+id/gj_gjmc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x10"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:textColor="@color/blue_deep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="@string/alarm_level"
+                    android:textSize="@dimen/x35" />
+
+                <TextView
+                    android:id="@+id/gj_gjlb"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x10"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:textColor="@color/blue_deep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="@string/alarm_content"
+                    android:textSize="@dimen/x35" />
+
+                <TextView
+                    android:id="@+id/gj_gjnr"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x10"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:textColor="@color/blue_deep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="@string/alarm_time"
+                    android:textSize="@dimen/x35" />
+
+                <TextView
+                    android:id="@+id/gj_gjsj"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

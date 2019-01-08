@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="report_fragment.DayReportFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/fragment_day_report_date_before"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:layout_marginRight="@dimen/x80"
+            android:background="@drawable/reduce" />
+
+        <TextView
+            android:id="@+id/fragment_day_report_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="@dimen/x40" />
+
+        <ImageView
+            android:id="@+id/fragment_day_report_date_next"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:layout_marginLeft="@dimen/x80"
+            android:background="@drawable/add" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/day_report_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.administrator.dimine_projectd.ViewPagerIndicator
+            android:id="@+id/day_report_id_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x120"
+            android:background="@color/blue_deep"
+            android:orientation="horizontal">
+
+        </com.example.administrator.dimine_projectd.ViewPagerIndicator>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/day_report_id_vp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/report_have_nomessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/gray_line"></include>
+
+        <ImageView
+            android:id="@+id/report_img_nomessage"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/x150"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x200"
+            android:background="@drawable/mnomessage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/report_img_nomessage"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x50"
+            android:text="@string/home_nomessage"
+            android:textSize="@dimen/x40" />
+
+    </LinearLayout>
+</LinearLayout>

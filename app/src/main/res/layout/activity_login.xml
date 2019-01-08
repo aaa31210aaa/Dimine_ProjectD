@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_deep"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.dimine_projectd.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_height"
+            android:background="@color/blue_deep">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/login_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x50" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/login_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x50"
+            android:gravity="center"
+            android:text="@string/app_login_name"
+            android:textColor="@color/blue_deep"
+            android:textSize="@dimen/x50" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:layout_margin="@dimen/x50"
+            android:background="@color/blue_deep" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_marginRight="@dimen/x50">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <com.example.administrator.dimine_projectd.ClearEditText
+                        android:id="@+id/login_editext_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x150"
+                        android:background="@drawable/editext_ybs"
+                        android:hint="@string/login_username"
+                        android:paddingLeft="@dimen/x130"
+                        android:paddingRight="@dimen/x100"
+                        android:singleLine="true"
+                        android:textColorHint="@color/hint" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x80"
+                        android:layout_height="@dimen/x80"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:background="@drawable/em_icon_account" />
+
+                    <CheckBox
+                        android:id="@+id/login_save_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_marginRight="@dimen/x50">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <com.example.administrator.dimine_projectd.ClearEditText
+                        android:id="@+id/login_editext_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x150"
+                        android:background="@drawable/editext_ybx"
+                        android:hint="@string/login_password"
+                        android:inputType="textPassword"
+                        android:paddingLeft="@dimen/x130"
+                        android:paddingRight="@dimen/x20"
+                        android:singleLine="true"
+                        android:textColorHint="@color/hint" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x80"
+                        android:layout_height="@dimen/x80"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:background="@drawable/em_icon_pwd" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/login_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x50"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--<RadioButton-->
+            <!--android:id="@+id/personal"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="@dimen/x50"-->
+            <!--android:checked="true"-->
+            <!--android:text="个人" />-->
+
+            <!--<RadioButton-->
+            <!--android:id="@+id/admin"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="管理者" />-->
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/login_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/x50"
+            android:background="@drawable/smssdk_btn"
+            android:text="@string/login_btn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x40" />
+
+        <Button
+            android:id="@+id/change_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_style"
+            android:text="@string/change_language_btn" />
+    </LinearLayout>
+</LinearLayout>

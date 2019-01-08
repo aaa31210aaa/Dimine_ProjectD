@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@android:style/Theme.Dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fadingEdge="none"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/choose_headimg_xc"
+        android:layout_width="@dimen/x800"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/x15"
+        android:background="@drawable/editext_yb">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x120"
+            android:gravity="center"
+            android:text="从相册选取" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/choose_headimg_pz"
+        android:layout_width="@dimen/x800"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/x15"
+        android:background="@drawable/editext_yb">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x120"
+            android:gravity="center"
+            android:text="拍照" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/choose_headimg_cancel"
+        android:layout_width="@dimen/x800"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/x15"
+        android:background="@drawable/editext_yb">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x120"
+            android:gravity="center"
+            android:text="取消" />
+
+    </LinearLayout>
+
+</LinearLayout>

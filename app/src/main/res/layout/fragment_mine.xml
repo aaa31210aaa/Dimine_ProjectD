@@ -1,0 +1,229 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fragment.MineFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/blue_deep">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mine_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x50" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x260"
+        android:layout_marginTop="@dimen/x50"
+        android:background="@color/blue_deep">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25">
+
+            <com.example.administrator.dimine_projectd.CircularImage
+                android:id="@+id/mine_headview_img"
+                android:layout_width="@dimen/x150"
+                android:layout_height="@dimen/x150"
+                android:layout_centerInParent="true"
+                android:background="@drawable/avatar" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/x200"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/mine_get_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x35" />
+
+                <TextView
+                    android:id="@+id/mine_name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/mine_get_company"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x35" />
+
+                <TextView
+                    android:id="@+id/mine_company_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x35" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/mine_get_position"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x35" />
+
+                <TextView
+                    android:id="@+id/mine_position_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/mine_approval"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/todo_title_name"
+                android:paddingLeft="@dimen/x40"
+                android:drawableRight="@drawable/u73"
+                android:gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+
+        <include layout="@layout/gray_line" />
+
+        <LinearLayout
+            android:id="@+id/mine_notification"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/mine_notification_title"
+                android:paddingLeft="@dimen/x40"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/u73"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/gray_line" />
+
+        <LinearLayout
+            android:id="@+id/mine_modify_password"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/mine_modify_password"
+                android:drawableRight="@drawable/u73"
+                android:paddingLeft="@dimen/x40"
+                android:gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+        <include layout="@layout/gray_line" />
+
+        <LinearLayout
+            android:id="@+id/mine_about"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/x40"
+                android:drawableRight="@drawable/u73"
+                android:text="@string/mine_about" />
+
+        </LinearLayout>
+
+        <include layout="@layout/gray_line" />
+
+        <LinearLayout
+            android:id="@+id/mine_cancellation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/u73"
+                android:paddingLeft="@dimen/x40"
+                android:gravity="center_vertical"
+                android:text="@string/mine_cancellation" />
+
+        </LinearLayout>
+
+
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/recyclerView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"></RelativeLayout>-->
+    </LinearLayout>
+
+</LinearLayout>

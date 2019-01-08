@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_deep"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".MyPlanDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/top_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_height"
+                android:background="@color/blue_deep"
+                android:gravity="center">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/my_plan_test_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/x50" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/my_plan_test_back"
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/x80"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:background="@drawable/back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/plan_have_nomessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_nomessage"
+                android:layout_width="@dimen/x150"
+                android:layout_height="@dimen/x150"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x450"
+                android:background="@drawable/mnomessage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_nomessage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x50"
+                android:text="没有查询到数据内容"
+                android:textSize="@dimen/x50" />
+
+        </RelativeLayout>
+
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/plan_have_message"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_below="@id/top_content"-->
+            <!--android:layout_marginTop="@dimen/x30">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_name"-->
+                <!--android:layout_width="@dimen/x360"-->
+                <!--android:layout_height="@dimen/x100"-->
+                <!--android:background="@color/blue_deep"-->
+                <!--android:gravity="center"-->
+                <!--android:text=""-->
+                <!--android:textColor="@color/white" />-->
+
+            <!--<com.example.administrator.dimine_projectd.NoScrollHorizontalScrollView-->
+                <!--android:id="@+id/sv_title"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="@dimen/x100"-->
+                <!--android:layout_toRightOf="@id/tv_name"-->
+                <!--android:scrollbars="none">-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/sv_title_ll"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="@dimen/x100"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:orientation="horizontal">-->
+
+
+                <!--</LinearLayout>-->
+            <!--</com.example.administrator.dimine_projectd.NoScrollHorizontalScrollView>-->
+
+
+            <!--<ListView-->
+                <!--android:id="@+id/lv_goodname"-->
+                <!--android:layout_width="@dimen/x360"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_below="@id/tv_name"-->
+                <!--android:scrollbars="none"></ListView>-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_toRightOf="@id/tv_name"-->
+                <!--android:background="#cccccc" />-->
+
+            <!--<com.example.administrator.dimine_projectd.LinkedHorizontalScrollView-->
+                <!--android:id="@+id/sv_good_detail"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_below="@id/tv_name"-->
+                <!--android:layout_toRightOf="@id/lv_goodname"-->
+                <!--android:scrollbars="none">-->
+
+                <!--<ListView-->
+                    <!--android:id="@+id/lv_good_info"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"></ListView>-->
+            <!--</com.example.administrator.dimine_projectd.LinkedHorizontalScrollView>-->
+        <!--</RelativeLayout>-->
+
+
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+            android:id="@+id/plan_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <ListView
+            android:id="@+id/plan_detail_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            ></ListView>
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+    </LinearLayout>
+</LinearLayout>

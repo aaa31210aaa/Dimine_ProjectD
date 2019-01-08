@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>agree</item>
+        <item>no</item>
+    </string-array>
+
+
+    <string-array name="select_week">
+        <item>First week</item>
+        <item>Second weeks</item>
+        <item>Third weeks</item>
+        <item>Fourth weeks</item>
+        <item>Fifth weeks</item>
+        <item>Sixth weeks</item>
+    </string-array>
+</resources>

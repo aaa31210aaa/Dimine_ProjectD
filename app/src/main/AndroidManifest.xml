@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.dimine_projectd">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <!-- <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> -->
+    <!-- 往SDCard写入数据权限 -->
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+    <!-- 从SDCard读取数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="utils.MyApplication"
+        android:allowBackup="true"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar">
+        <activity
+            android:name="com.example.administrator.dimine_projectd.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.example.administrator.dimine_projectd.Welcome"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.administrator.dimine_projectd.Login"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.example.administrator.dimine_projectd.PlanWeeklyDetail"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.administrator.dimine_projectd.ProductionDetail"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.example.administrator.dimine_projectd.NewProductionJl"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/TranslucentTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.administrator.dimine_projectd.ModifyPassword"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.administrator.dimine_projectd.MyNotification"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.example.administrator.dimine_projectd.Graphical"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.administrator.dimine_projectd.NotificationDetail"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.example.administrator.dimine_projectd.AddProChooseBc"
+            android:launchMode="singleTop"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.example.administrator.dimine_projectd.AddProDevice"
+            android:launchMode="singleTop"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.example.administrator.dimine_projectd.AddProTech"
+            android:launchMode="singleTop"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="production_fragment.ProductionHistory"
+            android:launchMode="singleTop"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.example.administrator.dimine_projectd.AddProChooseBz"
+            android:launchMode="singleTop"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.example.administrator.dimine_projectd.MyPlanDetail"
+            android:launchMode="singleTop"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.example.administrator.dimine_projectd.MyApprovalActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.example.administrator.dimine_projectd.TransactDbsy"
+            android:launchMode="singleTop"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.example.administrator.dimine_projectd.YuJing"
+            android:launchMode="singleTop"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.example.administrator.dimine_projectd.GaoJing"
+            android:launchMode="singleTop"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.example.administrator.dimine_projectd.MyPllb"
+            android:launchMode="singleTop"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.example.administrator.dimine_projectd.MyPlEditext"
+            android:launchMode="singleTop"
+            android:theme="@style/TranslucentTheme" />
+        <activity android:name="com.example.administrator.dimine_projectd.HeadImgTest" />
+        <activity android:name="devicemanagement.DeviceManagement"></activity>
+    </application>
+
+</manifest>

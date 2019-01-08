@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_deep"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.dimine_projectd.NotificationDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_height"
+                android:background="@color/blue_deep"
+                android:gravity="center">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/plan_weekly_detail_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/x50" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/notification_details_title"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/x50" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/notification_detail_back"
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/x80"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:background="@drawable/back" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/notification_wb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/no_gg_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x100">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/x50"
+                        android:layout_marginTop="@dimen/x10"
+                        android:text="@string/notice"
+                        android:textSize="@dimen/x50" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/no_tp_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x450"
+                    android:layout_below="@id/no_gg_ll"
+                    android:layout_margin="@dimen/x20">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/plxq" />
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/no_tp_ll">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x400">
+
+                        <TextView
+                            android:id="@+id/notification_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/x20"
+                            android:text="" />
+                    </LinearLayout>
+                </ScrollView>
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/x80"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--&gt;-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/notification_detail_zan"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:background="@drawable/editext_bk"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="赞"-->
+                            <!--android:textSize="@dimen/x50" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/notification_detail_pl"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:background="@drawable/editext_bk"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="评论"-->
+                            <!--android:textSize="@dimen/x50" />-->
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/notification_etvbody"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:background="@color/gray_qian"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:padding="@dimen/x18"-->
+                    <!--android:visibility="gone">-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/notification_etv"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/editext_bk"-->
+                        <!--android:hint="说点什么..."-->
+                        <!--android:paddingLeft="@dimen/x20" />-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/notification_send"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="6dp"-->
+                        <!--android:layout_marginRight="6dp"-->
+                        <!--android:background="@drawable/editext_bk"-->
+                        <!--android:enabled="false"-->
+                        <!--android:padding="@dimen/x18"-->
+                        <!--android:text="发送"-->
+                        <!--android:textSize="16sp" />-->
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

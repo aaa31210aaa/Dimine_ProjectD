@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.dimine_projectd.CommentList">
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:id="@+id/comment_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_qian"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/input_edit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/x80"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_weight="1"
+            android:background="@drawable/editext_bk"
+            android:gravity="center_vertical"
+            android:hint="请输入"
+            android:maxLength="2000"
+            android:paddingLeft="@dimen/x20"
+            android:textColorHint="@color/hint"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/input_submit"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/x80"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:background="@drawable/btn_bk"
+            android:text="评论" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,250 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f3f3f3"
+    tools:context="production_fragment.NewProductionFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x188"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/new_production_etv_bz"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/x20"
+                        android:background="@drawable/editext_bk"
+                        android:gravity="center"
+                        android:textColorHint="@color/hint"
+                        android:textSize="@dimen/x40" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/new_production_tv_bc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/x20"
+                        android:background="@drawable/editext_bk"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x20"
+                        android:text=""
+                        android:hint="班次"
+                        android:textSize="@dimen/x40" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x60"
+                        android:layout_height="@dimen/x60"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x40"
+                        android:background="@drawable/production_xl" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x188">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/new_production_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/x20"
+                        android:background="@drawable/editext_bk"
+                        android:gravity="center"
+                        android:textSize="@dimen/x40" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/new_production_jl"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/x20"
+                        android:background="@drawable/editext_bk"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/x80"
+                        android:hint="作业地点"
+                        android:paddingLeft="@dimen/x20"
+                        android:textSize="@dimen/x40" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x60"
+                        android:layout_height="@dimen/x60"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x40"
+                        android:background="@drawable/production_search" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x188">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/new_production_device"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/x20"
+                        android:background="@drawable/editext_bk"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x20"
+                        android:text=""
+                        android:hint="设备"
+                        android:textSize="@dimen/x40" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x60"
+                        android:layout_height="@dimen/x60"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x40"
+                        android:background="@drawable/production_xl" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/new_production_gy"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/x20"
+                        android:background="@drawable/editext_bk"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x20"
+                        android:text=""
+                        android:hint="工艺"
+                        android:textSize="@dimen/x40" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x60"
+                        android:layout_height="@dimen/x60"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x40"
+                        android:background="@drawable/production_xl" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/new_production_zdy_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/new_production_beizhu"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="@dimen/x150"
+                    android:layout_margin="@dimen/x20"
+                    android:background="@drawable/editext_bk"
+                    android:paddingLeft="@dimen/x20"
+                    android:paddingRight="@dimen/x20"
+                    android:textColorHint="@color/gray_deep"
+                    android:text=""
+                    android:hint="备注"
+                    />
+
+                <ImageView
+                    android:id="@+id/new_production_submit"
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="@dimen/x80"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/production_submit" />
+            </LinearLayout>
+
+
+
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="0.8">-->
+
+                <!--<EditText-->
+                <!--android:id="@+id/new_production_beizhu"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_margin="@dimen/x20"-->
+                <!--android:background="@drawable/tab_horizontal_item_d"-->
+                <!--android:gravity="left|top"-->
+                <!--android:hint="备注"-->
+                <!--android:inputType="textMultiLine"-->
+                <!--android:padding="@dimen/x15"-->
+                <!--android:textColorHint="@color/hint"-->
+                <!--android:textSize="@dimen/x40" />-->
+
+                <!--</LinearLayout>-->
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

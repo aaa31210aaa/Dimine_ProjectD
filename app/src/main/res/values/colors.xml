@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="blue_deep">#1C86EE</color>
+    <color name="red">#ff0000</color>
+    <color name="hint">#c3c3c3</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray_deep">#cccccc</color>
+    <color name="software_textColor_unselected">#C3C3C3C3</color>
+    <color name="software_textColor_selected">#1874CD</color>
+    <color name="yelow">#FFFF00</color>
+    <color name="chengse">#FFD700</color>
+    <color name="ls">#66CD00</color>
+    <color name="meihong">#CD2990</color>
+    <color name="gray_qian">#e3e3e3</color>
+    <color name="transparent">#00000000</color>
+    <color name="griditems_bg">#ffe8ecef</color>
+    <color name="home_text_color">#FF6347</color>
+    <color name="commo_text_color">#ff333333</color>
+    <color name="line">#ffd3dde6</color>
+    <color name="light_blue">#6593cb</color>
+
+    <!--刷新头头-->
+    <color name="ptr_header_bg">#323232</color>
+    <color name="action_bar_bg">#232426</color>
+    <color name="stroke_bg">#2b2b2b</color>
+    <color name="refresh_img_ks">#00bb9c</color>
+
+
+    <!--刷新尾部-->
+    <color name="ptr_footer_tx">#8e8e8e</color>
+
+    <!--朋友圈色值-->
+    <color name="nick">#517fae</color>
+    <color name="item_bottom_text">#8e8e8e</color>
+    <color name="item_showmore_click">#c6c6c6</color>
+    <color name="line_bg">#e5e5e5</color>
+
+    <!--点赞popup色值-->
+    <color name="comment_popup_bg">#4c5154</color>
+    <color name="comment_popup_tx_bg">#c7c7c7</color>
+
+    <!--文字颜色-->
+    <color name="text_hint_color">#bababa</color>
+    <color name="normal_font_color">#1A1A1A</color>
+
+    <!--other-->
+    <color name="wechat_green_bg">#10d21c</color>
+    <color name="comment_click_bg">#CCD2DF</color>
+    <color name="delete_click_bg">#EAEAEA</color>
+
+    <!--图片点击颜色-->
+    <color name="img_foregroundColor">#85414141</color>
+
+    <!--popup背景蒙层-->
+    <color name="popup_background">#8e030303</color>
+
+
+    <color name="color_8290AF">#8290AF</color>
+    <color name="color_232323">#232323</color>
+    <color name="color_aeaeae">#aeaeae</color>
+    <color name="im_social_dig_name_bg">#DDDDDD</color>
+    <color name="im_font_color_text_hint">#abb1b6</color>
+    <color name="im_line_color">#dadada</color>
+    <color name="name_selector_color">#cccccc</color>
+    <color name="bg_no_photo">#EEEEEE</color>
+    <color name="blue_qian">#E0FFFF</color>
+
+
+    <color name="green">#00ff00</color>
+</resources>

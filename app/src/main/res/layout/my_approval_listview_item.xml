@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y200">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y230"
+            android:layout_weight="0.2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x100"
+                android:layout_height="@dimen/x100"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y40"
+                android:src="@drawable/mlocation" />
+
+            <TextView
+                android:id="@+id/weekly_kt_jj_listview_item_fd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y150"
+                android:text="-120分段"
+                android:textSize="@dimen/x35" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="周计划进尺:"
+                    android:textSize="@dimen/x40" />
+
+                <TextView
+                    android:id="@+id/weekly_kt_jj_listview_item_zjhjc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textSize="@dimen/x40" />
+
+            </LinearLayout>
+
+            <include layout="@layout/gray_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="周计划工程量:"
+                    android:textSize="@dimen/x40" />
+
+                <TextView
+                    android:id="@+id/weekly_kt_jj_listview_item_zjhgcl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textSize="@dimen/x40" />
+
+
+            </LinearLayout>
+
+            <include layout="@layout/gray_line" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1">
+
+            <ImageView
+                android:id="@+id/weekly_kt_jj_listview_item_xl"
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/x80"
+                android:layout_gravity="bottom"
+                android:background="@drawable/xl" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/weekly_kt_jj_listview_item_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x200"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="地点："
+                android:textSize="@dimen/x35" />
+
+            <TextView
+                android:id="@+id/weekly_kt_jj_listview_item_zd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="-120分段"
+                android:textSize="@dimen/x35" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="中班:"
+                android:textSize="@dimen/x35" />
+
+            <TextView
+                android:id="@+id/weekly_kt_jj_listview_item_zb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="3#台车"
+                android:textSize="@dimen/x35" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:textSize="@dimen/x35"
+                    android:text="计划工程量:" />
+
+                <TextView
+                    android:id="@+id/weekly_kt_jj_listview_item_jhgcl"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:textSize="@dimen/x35"
+                    android:text="5(m)" />
+
+                <TextView
+                    android:id="@+id/weekly_kt_jj_listview_item_dont"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:textSize="@dimen/x35"
+                    android:text="32.5(m³)" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
